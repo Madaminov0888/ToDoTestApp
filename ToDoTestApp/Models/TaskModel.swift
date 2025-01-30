@@ -16,7 +16,7 @@ struct TaskResponse: Codable {
 
 struct TaskModel: Identifiable, Hashable, Codable {
     let id: Int
-    let todo: String
+    var todo: String
     var description: String?
     var createdAt: Date?
     var completed: Bool
