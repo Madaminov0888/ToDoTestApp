@@ -11,7 +11,6 @@ class TasksTBCell: UITableViewCell {
     
     static let identifier = "TaskTable"
     
-    var coreDataManager: CoreDataManageable?
     var onTaskUpdate: ((TaskModel) -> Void)?
     
     var taskTitleLabel = CSTextLabel(fontSize: 26, textAlignment: .left)
@@ -32,9 +31,8 @@ class TasksTBCell: UITableViewCell {
     }
     
     
-    func configure(taskModel: TaskModel, coreDataManager: CoreDataManageable) {
+    func configure(taskModel: TaskModel) {
         self.task = taskModel
-        self.coreDataManager = coreDataManager
         self.contentView.backgroundColor = .systemBackground
         configureToggleButton()
         configureTaskTitle()
@@ -52,7 +50,6 @@ class TasksTBCell: UITableViewCell {
             guard let self = self, var task = self.task else { return }
             
             task.completed = isOn
-            self.coreDataManager?.updateTask(task)
             self.updateTitleStyle()
             self.onTaskUpdate?(task)
         }

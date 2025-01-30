@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D5AA752D2D4BA1BC00FB7B5B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5AA752C2D4BA1BC00FB7B5B /* HomeView.swift */; };
+		D5AA752F2D4BBFCA00FB7B5B /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5AA752E2D4BBFCA00FB7B5B /* HomePresenter.swift */; };
+		D5AA75312D4BC04B00FB7B5B /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5AA75302D4BC04B00FB7B5B /* HomeInteractor.swift */; };
+		D5AA75332D4BC08D00FB7B5B /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5AA75322D4BC08D00FB7B5B /* HomeRouter.swift */; };
 		D5AF0D2A2D4A5DFD00BFEF09 /* Tasks.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D5AF0D282D4A5DFD00BFEF09 /* Tasks.xcdatamodeld */; };
 		D5AF0D2C2D4A6BFD00BFEF09 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5AF0D2B2D4A6BFD00BFEF09 /* CoreDataManager.swift */; };
 		D5AF0D2E2D4AA33900BFEF09 /* EditTaskVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5AF0D2D2D4AA33900BFEF09 /* EditTaskVC.swift */; };
@@ -21,14 +25,13 @@
 		D5CACC552D49770700933A99 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CACC3E2D49770700933A99 /* NetworkManager.swift */; };
 		D5CACC562D49770700933A99 /* URLEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CACC3F2D49770700933A99 /* URLEndpoints.swift */; };
 		D5CACC572D49770700933A99 /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CACC412D49770700933A99 /* TaskModel.swift */; };
-		D5CACC582D49770700933A99 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CACC472D49770700933A99 /* HomeVC.swift */; };
 		D5CACC592D49770700933A99 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CACC492D49770700933A99 /* AppDelegate.swift */; };
 		D5CACC5A2D49770700933A99 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CACC4B2D49770700933A99 /* SceneDelegate.swift */; };
 		D5CACC5D2D49770E00933A99 /* ToDoTestAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CACC5B2D49770E00933A99 /* ToDoTestAppTests.swift */; };
 		D5CACC612D49771200933A99 /* ToDoTestAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CACC5E2D49771200933A99 /* ToDoTestAppUITests.swift */; };
 		D5CACC622D49771200933A99 /* ToDoTestAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CACC5F2D49771200933A99 /* ToDoTestAppUITestsLaunchTests.swift */; };
 		D5CACC642D49851000933A99 /* Date+.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CACC632D49851000933A99 /* Date+.swift */; };
-		D5CACC682D4A1D7A00933A99 /* CSTBItemPreviewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CACC672D4A1D7A00933A99 /* CSTBItemPreviewVC.swift */; };
+		D5CACC682D4A1D7A00933A99 /* TBItemPreviewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CACC672D4A1D7A00933A99 /* TBItemPreviewVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D5AA752C2D4BA1BC00FB7B5B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		D5AA752E2D4BBFCA00FB7B5B /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		D5AA75302D4BC04B00FB7B5B /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		D5AA75322D4BC08D00FB7B5B /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
 		D5AF0D292D4A5DFD00BFEF09 /* Tasks.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Tasks.xcdatamodel; sourceTree = "<group>"; };
 		D5AF0D2B2D4A6BFD00BFEF09 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		D5AF0D2D2D4AA33900BFEF09 /* EditTaskVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTaskVC.swift; sourceTree = "<group>"; };
@@ -66,7 +73,6 @@
 		D5CACC412D49770700933A99 /* TaskModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskModel.swift; sourceTree = "<group>"; };
 		D5CACC432D49770700933A99 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D5CACC442D49770700933A99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		D5CACC472D49770700933A99 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		D5CACC492D49770700933A99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D5CACC4A2D49770700933A99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5CACC4B2D49770700933A99 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -75,7 +81,7 @@
 		D5CACC5E2D49771200933A99 /* ToDoTestAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTestAppUITests.swift; sourceTree = "<group>"; };
 		D5CACC5F2D49771200933A99 /* ToDoTestAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTestAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D5CACC632D49851000933A99 /* Date+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+.swift"; sourceTree = "<group>"; };
-		D5CACC672D4A1D7A00933A99 /* CSTBItemPreviewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSTBItemPreviewVC.swift; sourceTree = "<group>"; };
+		D5CACC672D4A1D7A00933A99 /* TBItemPreviewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TBItemPreviewVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +109,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D5AA752B2D4BA18000FB7B5B /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D5AA752C2D4BA1BC00FB7B5B /* HomeView.swift */,
+				D5AA752E2D4BBFCA00FB7B5B /* HomePresenter.swift */,
+				D5AA75302D4BC04B00FB7B5B /* HomeInteractor.swift */,
+				D5AA75322D4BC08D00FB7B5B /* HomeRouter.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		D5AA75342D4C04C500FB7B5B /* ItemViews */ = {
+			isa = PBXGroup;
+			children = (
+				D5CACC3A2D49770700933A99 /* TasksTBCell.swift */,
+				D5CACC672D4A1D7A00933A99 /* TBItemPreviewVC.swift */,
+			);
+			path = ItemViews;
+			sourceTree = "<group>";
+		};
+		D5AA75352D4C04DD00FB7B5B /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				D5CACC392D49770700933A99 /* CSToggleButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		D5AA75362D4C04E900FB7B5B /* TextFields+Label */ = {
+			isa = PBXGroup;
+			children = (
+				D5CACC382D49770700933A99 /* CSTextLabel.swift */,
+				D5AF0D732D4AB3D700BFEF09 /* CSTextField.swift */,
+				D5AF0D752D4AB89300BFEF09 /* CSTextView.swift */,
+			);
+			path = "TextFields+Label";
+			sourceTree = "<group>";
+		};
 		D5CACBE22D48D23400933A99 = {
 			isa = PBXGroup;
 			children = (
@@ -126,12 +170,9 @@
 		D5CACC3B2D49770700933A99 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				D5CACC382D49770700933A99 /* CSTextLabel.swift */,
-				D5CACC392D49770700933A99 /* CSToggleButton.swift */,
-				D5CACC3A2D49770700933A99 /* TasksTBCell.swift */,
-				D5CACC672D4A1D7A00933A99 /* CSTBItemPreviewVC.swift */,
-				D5AF0D732D4AB3D700BFEF09 /* CSTextField.swift */,
-				D5AF0D752D4AB89300BFEF09 /* CSTextView.swift */,
+				D5AA75362D4C04E900FB7B5B /* TextFields+Label */,
+				D5AA75352D4C04DD00FB7B5B /* Buttons */,
+				D5AA75342D4C04C500FB7B5B /* ItemViews */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -176,8 +217,8 @@
 		D5CACC482D49770700933A99 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				D5CACC472D49770700933A99 /* HomeVC.swift */,
 				D5AF0D2D2D4AA33900BFEF09 /* EditTaskVC.swift */,
+				D5AA752B2D4BA18000FB7B5B /* Home */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -354,10 +395,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5CACC642D49851000933A99 /* Date+.swift in Sources */,
-				D5CACC682D4A1D7A00933A99 /* CSTBItemPreviewVC.swift in Sources */,
+				D5CACC682D4A1D7A00933A99 /* TBItemPreviewVC.swift in Sources */,
 				D5CACC512D49770700933A99 /* CSTextLabel.swift in Sources */,
+				D5AA75312D4BC04B00FB7B5B /* HomeInteractor.swift in Sources */,
 				D5AF0D762D4AB89300BFEF09 /* CSTextView.swift in Sources */,
 				D5CACC522D49770700933A99 /* CSToggleButton.swift in Sources */,
+				D5AA752D2D4BA1BC00FB7B5B /* HomeView.swift in Sources */,
 				D5AF0D2A2D4A5DFD00BFEF09 /* Tasks.xcdatamodeld in Sources */,
 				D5CACC532D49770700933A99 /* TasksTBCell.swift in Sources */,
 				D5CACC542D49770700933A99 /* Previewable.swift in Sources */,
@@ -366,7 +409,8 @@
 				D5CACC562D49770700933A99 /* URLEndpoints.swift in Sources */,
 				D5CACC572D49770700933A99 /* TaskModel.swift in Sources */,
 				D5AF0D742D4AB3D700BFEF09 /* CSTextField.swift in Sources */,
-				D5CACC582D49770700933A99 /* HomeVC.swift in Sources */,
+				D5AA752F2D4BBFCA00FB7B5B /* HomePresenter.swift in Sources */,
+				D5AA75332D4BC08D00FB7B5B /* HomeRouter.swift in Sources */,
 				D5CACC592D49770700933A99 /* AppDelegate.swift in Sources */,
 				D5AF0D2C2D4A6BFD00BFEF09 /* CoreDataManager.swift in Sources */,
 				D5CACC5A2D49770700933A99 /* SceneDelegate.swift in Sources */,

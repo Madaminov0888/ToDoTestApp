@@ -93,11 +93,3 @@ class CSTBItemPreviewVC: UIViewController {
         ])
     }
 }
-
-
-
-import SwiftUI
-#Preview {
-    SwiftUIPreview(vc: CSTBItemPreviewVC(for: TaskModel(id: 1, todo: "asfd", description: "sfsdfsgssf",completed: true, userId: 1)))
-        .frame(width: 300, height: 300)
-}

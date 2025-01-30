@@ -7,11 +7,13 @@
 
 import UIKit
 
+//MARK: EditTaskVC
+/// It is better solution not to use VIPER on small ViewControllers
+
 class EditTaskVC: UIViewController {
     
     var task: TaskModel
     var coreDataManager: CoreDataManager?
-    private var creatingNewTask: Bool
     var onSave: ((TaskModel) -> Void)?
     
     var dateLabel = CSTextLabel(font: .preferredFont(forTextStyle: .body), textAlignment: .left)
@@ -20,14 +22,12 @@ class EditTaskVC: UIViewController {
     
     init(task: TaskModel) {
         self.task = task
-        self.creatingNewTask = false
         super.init(nibName: nil, bundle: nil)
     }
     
     init() {
         let uniqueInt = Int(Date().timeIntervalSince1970 * 1000)
         self.task = TaskModel(id: uniqueInt, todo: "", createdAt: Date(), completed: false, userId: uniqueInt)
-        self.creatingNewTask = true
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -45,6 +45,7 @@ class EditTaskVC: UIViewController {
         super.viewWillDisappear(animated)
         if let text = titleTextField.text { task.todo = text }
         if let desc = bodyTextView.text { task.description = desc }
+        if task.todo.isEmpty && (task.description == nil || task.description?.isEmpty == true) { return }
         onSave?(task)
     }
     
@@ -101,12 +102,4 @@ class EditTaskVC: UIViewController {
         ])
     }
     
-}
-
-
-
-import SwiftUI
-#Preview {
-    SwiftUIPreview(vc: UINavigationController(rootViewController: EditTaskVC()))
-        .ignoresSafeArea()
 }

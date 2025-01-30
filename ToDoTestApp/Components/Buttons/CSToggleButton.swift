@@ -70,10 +70,3 @@ class CSToggleButton: UIButton {
         updateAppearance()
     }
 }
-
-
-import SwiftUI
-#Preview {
-    UIViewPreview(view: CSToggleButton(frame: .init(x: 0, y: 0, width: 200, height: 200)))
-        .frame(width: 40, height: 40)
-}
