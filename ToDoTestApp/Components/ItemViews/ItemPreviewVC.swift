@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CSTBItemPreviewVC: UIViewController {
+class ItemPreviewVC: UIViewController {
     
     private var titleLabel = CSTextLabel(fontSize: 26, textAlignment: .left)
     private var bodyLabel = CSTextLabel(font: .preferredFont(forTextStyle: .title3), textAlignment: .left)

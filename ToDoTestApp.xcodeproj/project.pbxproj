@@ -11,6 +11,9 @@
 		D5AA752F2D4BBFCA00FB7B5B /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5AA752E2D4BBFCA00FB7B5B /* HomePresenter.swift */; };
 		D5AA75312D4BC04B00FB7B5B /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5AA75302D4BC04B00FB7B5B /* HomeInteractor.swift */; };
 		D5AA75332D4BC08D00FB7B5B /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5AA75322D4BC08D00FB7B5B /* HomeRouter.swift */; };
+		D5AA75382D4CC1DB00FB7B5B /* HomeViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5AA75372D4CC1DB00FB7B5B /* HomeViewControllerTest.swift */; };
+		D5AA753A2D4CC72D00FB7B5B /* HomeInteractorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5AA75392D4CC72D00FB7B5B /* HomeInteractorTest.swift */; };
+		D5AA753E2D4CF6F000FB7B5B /* CoreDataManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5AA753D2D4CF6F000FB7B5B /* CoreDataManagerTest.swift */; };
 		D5AF0D2A2D4A5DFD00BFEF09 /* Tasks.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D5AF0D282D4A5DFD00BFEF09 /* Tasks.xcdatamodeld */; };
 		D5AF0D2C2D4A6BFD00BFEF09 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5AF0D2B2D4A6BFD00BFEF09 /* CoreDataManager.swift */; };
 		D5AF0D2E2D4AA33900BFEF09 /* EditTaskVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5AF0D2D2D4AA33900BFEF09 /* EditTaskVC.swift */; };
@@ -24,14 +27,12 @@
 		D5CACC542D49770700933A99 /* Previewable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CACC3C2D49770700933A99 /* Previewable.swift */; };
 		D5CACC552D49770700933A99 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CACC3E2D49770700933A99 /* NetworkManager.swift */; };
 		D5CACC562D49770700933A99 /* URLEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CACC3F2D49770700933A99 /* URLEndpoints.swift */; };
-		D5CACC572D49770700933A99 /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CACC412D49770700933A99 /* TaskModel.swift */; };
+		D5CACC572D49770700933A99 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CACC412D49770700933A99 /* Entity.swift */; };
 		D5CACC592D49770700933A99 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CACC492D49770700933A99 /* AppDelegate.swift */; };
 		D5CACC5A2D49770700933A99 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CACC4B2D49770700933A99 /* SceneDelegate.swift */; };
 		D5CACC5D2D49770E00933A99 /* ToDoTestAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CACC5B2D49770E00933A99 /* ToDoTestAppTests.swift */; };
-		D5CACC612D49771200933A99 /* ToDoTestAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CACC5E2D49771200933A99 /* ToDoTestAppUITests.swift */; };
-		D5CACC622D49771200933A99 /* ToDoTestAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CACC5F2D49771200933A99 /* ToDoTestAppUITestsLaunchTests.swift */; };
 		D5CACC642D49851000933A99 /* Date+.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CACC632D49851000933A99 /* Date+.swift */; };
-		D5CACC682D4A1D7A00933A99 /* TBItemPreviewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CACC672D4A1D7A00933A99 /* TBItemPreviewVC.swift */; };
+		D5CACC682D4A1D7A00933A99 /* ItemPreviewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CACC672D4A1D7A00933A99 /* ItemPreviewVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,9 @@
 		D5AA752E2D4BBFCA00FB7B5B /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		D5AA75302D4BC04B00FB7B5B /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
 		D5AA75322D4BC08D00FB7B5B /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		D5AA75372D4CC1DB00FB7B5B /* HomeViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerTest.swift; sourceTree = "<group>"; };
+		D5AA75392D4CC72D00FB7B5B /* HomeInteractorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractorTest.swift; sourceTree = "<group>"; };
+		D5AA753D2D4CF6F000FB7B5B /* CoreDataManagerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManagerTest.swift; sourceTree = "<group>"; };
 		D5AF0D292D4A5DFD00BFEF09 /* Tasks.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Tasks.xcdatamodel; sourceTree = "<group>"; };
 		D5AF0D2B2D4A6BFD00BFEF09 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		D5AF0D2D2D4AA33900BFEF09 /* EditTaskVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTaskVC.swift; sourceTree = "<group>"; };
@@ -70,7 +74,7 @@
 		D5CACC3C2D49770700933A99 /* Previewable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Previewable.swift; sourceTree = "<group>"; };
 		D5CACC3E2D49770700933A99 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		D5CACC3F2D49770700933A99 /* URLEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLEndpoints.swift; sourceTree = "<group>"; };
-		D5CACC412D49770700933A99 /* TaskModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskModel.swift; sourceTree = "<group>"; };
+		D5CACC412D49770700933A99 /* Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
 		D5CACC432D49770700933A99 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D5CACC442D49770700933A99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D5CACC492D49770700933A99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -78,10 +82,8 @@
 		D5CACC4B2D49770700933A99 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D5CACC4C2D49770700933A99 /* ToDoTestApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ToDoTestApp.entitlements; sourceTree = "<group>"; };
 		D5CACC5B2D49770E00933A99 /* ToDoTestAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTestAppTests.swift; sourceTree = "<group>"; };
-		D5CACC5E2D49771200933A99 /* ToDoTestAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTestAppUITests.swift; sourceTree = "<group>"; };
-		D5CACC5F2D49771200933A99 /* ToDoTestAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTestAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D5CACC632D49851000933A99 /* Date+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+.swift"; sourceTree = "<group>"; };
-		D5CACC672D4A1D7A00933A99 /* TBItemPreviewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TBItemPreviewVC.swift; sourceTree = "<group>"; };
+		D5CACC672D4A1D7A00933A99 /* ItemPreviewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemPreviewVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 			children = (
 				D5AA752C2D4BA1BC00FB7B5B /* HomeView.swift */,
 				D5AA752E2D4BBFCA00FB7B5B /* HomePresenter.swift */,
+				D5CACC412D49770700933A99 /* Entity.swift */,
 				D5AA75302D4BC04B00FB7B5B /* HomeInteractor.swift */,
 				D5AA75322D4BC08D00FB7B5B /* HomeRouter.swift */,
 			);
@@ -124,7 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				D5CACC3A2D49770700933A99 /* TasksTBCell.swift */,
-				D5CACC672D4A1D7A00933A99 /* TBItemPreviewVC.swift */,
+				D5CACC672D4A1D7A00933A99 /* ItemPreviewVC.swift */,
 			);
 			path = ItemViews;
 			sourceTree = "<group>";
@@ -152,7 +155,6 @@
 			children = (
 				D5CACC4D2D49770700933A99 /* ToDoTestApp */,
 				D5CACC5C2D49770E00933A99 /* ToDoTestAppTests */,
-				D5CACC602D49771200933A99 /* ToDoTestAppUITests */,
 				D5CACBEC2D48D23400933A99 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -199,7 +201,6 @@
 		D5CACC422D49770700933A99 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				D5CACC412D49770700933A99 /* TaskModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -244,17 +245,11 @@
 			isa = PBXGroup;
 			children = (
 				D5CACC5B2D49770E00933A99 /* ToDoTestAppTests.swift */,
+				D5AA75372D4CC1DB00FB7B5B /* HomeViewControllerTest.swift */,
+				D5AA75392D4CC72D00FB7B5B /* HomeInteractorTest.swift */,
+				D5AA753D2D4CF6F000FB7B5B /* CoreDataManagerTest.swift */,
 			);
 			path = ToDoTestAppTests;
-			sourceTree = "<group>";
-		};
-		D5CACC602D49771200933A99 /* ToDoTestAppUITests */ = {
-			isa = PBXGroup;
-			children = (
-				D5CACC5E2D49771200933A99 /* ToDoTestAppUITests.swift */,
-				D5CACC5F2D49771200933A99 /* ToDoTestAppUITestsLaunchTests.swift */,
-			);
-			path = ToDoTestAppUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -395,7 +390,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5CACC642D49851000933A99 /* Date+.swift in Sources */,
-				D5CACC682D4A1D7A00933A99 /* TBItemPreviewVC.swift in Sources */,
+				D5CACC682D4A1D7A00933A99 /* ItemPreviewVC.swift in Sources */,
 				D5CACC512D49770700933A99 /* CSTextLabel.swift in Sources */,
 				D5AA75312D4BC04B00FB7B5B /* HomeInteractor.swift in Sources */,
 				D5AF0D762D4AB89300BFEF09 /* CSTextView.swift in Sources */,
@@ -407,7 +402,7 @@
 				D5AF0D2E2D4AA33900BFEF09 /* EditTaskVC.swift in Sources */,
 				D5CACC552D49770700933A99 /* NetworkManager.swift in Sources */,
 				D5CACC562D49770700933A99 /* URLEndpoints.swift in Sources */,
-				D5CACC572D49770700933A99 /* TaskModel.swift in Sources */,
+				D5CACC572D49770700933A99 /* Entity.swift in Sources */,
 				D5AF0D742D4AB3D700BFEF09 /* CSTextField.swift in Sources */,
 				D5AA752F2D4BBFCA00FB7B5B /* HomePresenter.swift in Sources */,
 				D5AA75332D4BC08D00FB7B5B /* HomeRouter.swift in Sources */,
@@ -421,7 +416,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5AA753A2D4CC72D00FB7B5B /* HomeInteractorTest.swift in Sources */,
 				D5CACC5D2D49770E00933A99 /* ToDoTestAppTests.swift in Sources */,
+				D5AA753E2D4CF6F000FB7B5B /* CoreDataManagerTest.swift in Sources */,
+				D5AA75382D4CC1DB00FB7B5B /* HomeViewControllerTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,8 +427,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5CACC612D49771200933A99 /* ToDoTestAppUITests.swift in Sources */,
-				D5CACC622D49771200933A99 /* ToDoTestAppUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

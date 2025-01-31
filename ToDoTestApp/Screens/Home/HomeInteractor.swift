@@ -33,7 +33,7 @@ class HomeInteractor: HomeInteractorInputProtocol {
     var networkManager: NetworkManagerProtocol
     var userDefaults: UserDefaults
     
-    private var allTasks: [TaskModel] = []
+    var allTasks: [TaskModel] = []
     
     init(coreDataManager: CoreDataManageable = CoreDataManager(configuration: .production), networkManager: NetworkManagerProtocol = NetworkManager(), userDefaults: UserDefaults = UserDefaults()) {
         self.coreDataManager = coreDataManager
@@ -62,7 +62,7 @@ class HomeInteractor: HomeInteractorInputProtocol {
         }
     }
     
-    internal func fetchRemoteTasks() {
+    func fetchRemoteTasks() {
         networkManager.fetchData(for: .todos, type: TaskResponse.self) { [weak self] result in
             guard let self = self else { return }
             

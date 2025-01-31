@@ -12,6 +12,13 @@ struct TaskResponse: Codable {
     let total: Int
     let skip: Int
     let limit: Int
+    
+    init(todos: [TaskModel]) {
+        self.todos = todos
+        self.total = todos.count
+        self.skip = 0
+        self.limit = 0
+    }
 }
 
 struct TaskModel: Identifiable, Hashable, Codable {

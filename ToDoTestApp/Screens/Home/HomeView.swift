@@ -83,7 +83,7 @@ class HomeViewController: UIViewController, HomeViewProtocol {
     
     
     
-    @objc private func newTaskTapped() {
+    @objc func newTaskTapped() {
         presenter.didSelectAddTask()
     }
     
@@ -202,7 +202,7 @@ extension HomeViewController: UITableViewDelegate {
     
     
     private func createPreviewView(for task: TaskModel) -> UIViewController {
-        let previewVC = CSTBItemPreviewVC(for: task)
+        let previewVC = ItemPreviewVC(for: task)
         previewVC.view.layoutIfNeeded()
         
         let targetWidth = view.bounds.width - 40

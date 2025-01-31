@@ -8,7 +8,7 @@
 import SwiftUI
 import UIKit
 
-struct SwiftUIPreview: UIViewControllerRepresentable {
+struct ViewControllerPreview: UIViewControllerRepresentable {
     let viewController: UIViewController
 
     init(vc: UIViewController) {
