@@ -29,3 +29,22 @@ struct TaskModel: Identifiable, Hashable, Codable {
     var completed: Bool
     let userId: Int
 }
+
+
+
+extension TaskModel {
+    var shareText: String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "MMM d, yyyy HH:mm" // Example: Jan 30, 2025 14:45
+        let createdAtString = createdAt.map { dateFormatter.string(from: $0) } ?? "Unknown Date"
+        
+        let completionStatus = completed ? "✅ Completed" : "❌ Not Completed"
+        
+        return """
+        📝 Task: \(todo)
+        📄 Description: \(description ?? "No description")
+        📅 Created At: \(createdAtString)
+        ✅ Status: \(completionStatus)
+        """
+    }
+}

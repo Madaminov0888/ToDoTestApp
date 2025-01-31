@@ -82,6 +82,17 @@ class HomeViewController: UIViewController, HomeViewProtocol {
     }
     
     
+    func shareContent(_ task: TaskModel) {
+        let activityVC = UIActivityViewController(activityItems: [task.shareText], applicationActivities: nil)
+        
+        if let popoverController = activityVC.popoverPresentationController {
+            popoverController.sourceView = self.view
+            popoverController.sourceRect = CGRect(x: 100, y: 200, width: 100, height: 50)
+        }
+        
+        present(activityVC, animated: true, completion: nil)
+    }
+    
     
     @objc func newTaskTapped() {
         presenter.didSelectAddTask()
@@ -158,7 +169,7 @@ extension HomeViewController: UITableViewDelegate {
         }
         
         let shareAction = UIAction(title: "Поделиться", image: UIImage(systemName: "square.and.arrow.up")) { _ in
-            print("Share")
+            self.shareContent(task)
         }
         
         return UIMenu(children: [editAction, shareAction, deleteAction])
