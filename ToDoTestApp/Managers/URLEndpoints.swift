@@ -8,8 +8,18 @@
 import Foundation
 
 
-enum Endpoint {
+
+protocol EndpointProtocol {    
+    var path: String { get }
+    var url: URL? { get }
+}
+
+
+
+enum Endpoint: EndpointProtocol {
     case todos
+    
+    static let baseURL = "https://dummyjson.com"
 
     var path: String {
         switch self {
@@ -18,9 +28,9 @@ enum Endpoint {
         }
     }
 
+    
     var url: URL? {
-        let baseURL = "https://dummyjson.com"
-        var components = URLComponents(string: baseURL + path)
+        let components = URLComponents(string: Endpoint.baseURL + path)
         return components?.url
     }
 }

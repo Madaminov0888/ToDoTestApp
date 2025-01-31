@@ -9,7 +9,7 @@ import Foundation
 
 
 protocol NetworkManagerProtocol {
-    func fetchData<T:Codable>(for endpoint: Endpoint, type: T.Type, completion: @escaping (Result<T, Error>) -> Void)
+    func fetchData<T:Codable>(for endpoint: EndpointProtocol, type: T.Type, completion: @escaping (Result<T, Error>) -> Void)
 }
 
 
@@ -21,7 +21,7 @@ class NetworkManager: NetworkManagerProtocol {
         self.session = session
     }
     
-    func fetchData<T: Codable>(for endpoint: Endpoint, type: T.Type, completion: @escaping (Result<T, Error>) -> Void) {
+    func fetchData<T: Codable>(for endpoint: EndpointProtocol, type: T.Type, completion: @escaping (Result<T, Error>) -> Void) {
         guard let url = endpoint.url else {
             completion(.failure(NetworkErrors.invalidURL))
             return
@@ -74,12 +74,28 @@ class NetworkManager: NetworkManagerProtocol {
 
 
 
-enum NetworkErrors: Error {
+enum NetworkErrors: Error, Equatable {
     case invalidURL
     case invalidResponse
     case invalidData
     case decodingError(Error)
     case serverError(statusCode: Int)
+    
+
+    static func == (lhs: NetworkErrors, rhs: NetworkErrors) -> Bool {
+        switch (lhs, rhs) {
+        case (.invalidURL, .invalidURL),
+            (.invalidResponse, .invalidResponse),
+            (.invalidData, .invalidData):
+            return true
+        case (.serverError(let lhsCode), .serverError(let rhsCode)):
+            return lhsCode == rhsCode
+        case (.decodingError, .decodingError):
+            return true
+        default:
+            return false
+        }
+    }
     
     var errorDescription: String? {
         switch self {

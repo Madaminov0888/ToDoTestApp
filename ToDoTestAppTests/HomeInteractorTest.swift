@@ -15,7 +15,7 @@ class MockNetworkManager: NetworkManagerProtocol {
     var fetchDataCalled = false
     var stubbedResult: Any?
 
-    func fetchData<T: Codable>(for endpoint: Endpoint, type: T.Type, completion: @escaping (Result<T, Error>) -> Void) {
+    func fetchData<T: Codable>(for endpoint: EndpointProtocol, type: T.Type, completion: @escaping (Result<T, Error>) -> Void) {
         fetchDataCalled = true
         if let result = stubbedResult as? Result<T, Error> {
             completion(result)

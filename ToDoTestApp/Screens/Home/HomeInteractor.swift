@@ -63,7 +63,7 @@ class HomeInteractor: HomeInteractorInputProtocol {
     }
     
     func fetchRemoteTasks() {
-        networkManager.fetchData(for: .todos, type: TaskResponse.self) { [weak self] result in
+        networkManager.fetchData(for: Endpoint.todos, type: TaskResponse.self) { [weak self] result in
             guard let self = self else { return }
             
             switch result {
