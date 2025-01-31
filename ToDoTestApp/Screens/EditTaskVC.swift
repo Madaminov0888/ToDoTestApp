@@ -37,6 +37,7 @@ class EditTaskVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.delegate = self
         configure()
     }
     
@@ -45,12 +46,14 @@ class EditTaskVC: UIViewController {
         super.viewWillDisappear(animated)
         if let text = titleTextField.text { task.todo = text }
         if let desc = bodyTextView.text { task.description = desc }
-        if task.todo.isEmpty && (task.description == nil || task.description?.isEmpty == true) { return }
+        if task.todo.isEmpty && task.description?.isEmpty != false { return }
+        if task.todo.isEmpty { return }
         onSave?(task)
     }
     
     private func configure() {
         view.backgroundColor = .systemBackground
+        setupCustomBackButton()
         configureTitleField()
         configureDateLabel()
         configureBodyTextView()
@@ -101,5 +104,50 @@ class EditTaskVC: UIViewController {
             bodyTextView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -padding),
         ])
     }
-    
+}
+
+
+
+extension EditTaskVC: UINavigationControllerDelegate {
+    private func setupCustomBackButton() {
+        navigationItem.hidesBackButton = true
+        
+        let backButton = UIButton(type: .system)
+        backButton.setImage(UIImage(systemName: "chevron.left"), for: .normal)
+        backButton.setTitle("Back", for: .normal)
+        backButton.tintColor = .systemYellow
+        backButton.titleLabel?.font = UIFont.systemFont(ofSize: 17)
+        backButton.semanticContentAttribute = .forceLeftToRight
+        backButton.imageEdgeInsets = UIEdgeInsets(top: 0, left: -5, bottom: 0, right: 5)
+        
+        
+        backButton.addTarget(self, action: #selector(handleBackButton), for: .touchUpInside)
+        
+        let backButtonItem = UIBarButtonItem(customView: backButton)
+        navigationItem.leftBarButtonItem = backButtonItem
+    }
+
+    @objc private func handleBackButton() {
+        if titleTextField.text?.isEmpty != false && bodyTextView.text.isEmpty != true {
+            showUnsavedChangesAlert()
+        } else {
+            navigationController?.popViewController(animated: true)
+        }
+    }
+
+    private func showUnsavedChangesAlert() {
+        let alert = UIAlertController(
+            title: "Название не введено",
+            message: "Вы не можете создать объект без название. Если вы уйдете, остальное содержимое будет удалено.",
+            preferredStyle: .alert
+        )
+
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+
+        alert.addAction(UIAlertAction(title: "OK", style: .destructive, handler: { _ in
+            self.navigationController?.popViewController(animated: true)
+        }))
+
+        present(alert, animated: true)
+    }
 }
